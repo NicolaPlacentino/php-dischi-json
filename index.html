@@ -26,8 +26,8 @@
     <main id="root">
         <div class="container">
             <div class="row row-cols-3 flex-wrap my-4">
-                <div v-for="disc in discs" class="col p-2">
-                    <div class="card">
+                <div v-for="disc in discs" class="col p-4">
+                    <div class="card bg-black text-white text-center">
                         <img :src="disc.poster" class="card-img-top" :alt="disc.title">
                         <div class="card-body">
                             <h5 class="card-title">{{disc.title}}</h5>
