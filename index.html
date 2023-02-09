@@ -22,8 +22,23 @@
     <script defer src="script.js"></script>
 </head>
 
-<body>
-
+<body class="bg-dark">
+    <main id="root">
+        <div class="container">
+            <div class="row row-cols-3 flex-wrap my-4">
+                <div v-for="disc in discs" class="col p-2">
+                    <div class="card">
+                        <img :src="disc.poster" class="card-img-top" :alt="disc.title">
+                        <div class="card-body">
+                            <h5 class="card-title">{{disc.title}}</h5>
+                            <p class="card-text">{{disc.author}}</p>
+                            <span class="card-text"><b>{{disc.year}}</b></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
